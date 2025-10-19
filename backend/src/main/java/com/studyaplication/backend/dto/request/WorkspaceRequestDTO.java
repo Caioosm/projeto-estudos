@@ -1,4 +1,9 @@
 package com.studyaplication.backend.dto.request;
 
-public record WorkspaceRequestDTO() {
+import java.util.UUID;
+
+public record WorkspaceRequestDTO(
+        String title,
+        UUID studentId
+) {
 }
