@@ -15,7 +15,7 @@ public class StudentService {
     }
 
     @Transactional
-    public Student save(Student student) {
-        return repository.save(student);
+    public void save(Student student) {
+       repository.save(student);
     }
 }
