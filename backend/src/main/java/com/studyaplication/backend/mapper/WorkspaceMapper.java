@@ -14,7 +14,7 @@ public abstract class WorkspaceMapper {
     @Autowired
     StudentRepository repository;
 
-    @Mapping(target = "student", expression = "java ( repository.findById(dto.studentId).orElse(null)")
+    @Mapping(target = "student", expression = "java( repository.findById(dto.studentId()).orElse(null) )")
     public abstract Workspace toEntity(WorkspaceRequestDTO dto);
 
     public abstract WorkspaceResponseDTO toDto(Workspace entity);
