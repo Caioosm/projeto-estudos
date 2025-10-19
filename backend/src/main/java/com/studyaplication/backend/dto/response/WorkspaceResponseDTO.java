@@ -6,6 +6,5 @@ import java.util.UUID;
 
 public record WorkspaceResponseDTO(
         UUID id,
-        String title,
-        Student student
+        String title
 ) {}
