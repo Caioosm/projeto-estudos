@@ -31,6 +31,8 @@ public class Workspace {
     TODO: Entidade Category
     private List<Category> category;
      */
+    @ManyToOne()
+    private Student student;
 
     @CreatedDate
     private LocalDateTime createdDate;

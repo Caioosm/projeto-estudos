@@ -4,6 +4,8 @@ import com.studyaplication.backend.model.enums.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -28,6 +30,8 @@ public class Student {
     private Role role = Role.USER;
 
     // Workspace
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Workspace> workspace;
 
     public Student() {}
 }
