@@ -32,6 +32,7 @@ public class Workspace {
     private List<Category> category;
      */
     @ManyToOne()
+    @JoinColumn(name = "student_id")
     private Student student;
 
     @CreatedDate
