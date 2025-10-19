@@ -8,5 +8,4 @@ public record WorkspaceResponseDTO(
         UUID id,
         String title,
         Student student
-) {
-}
+) {}

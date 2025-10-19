@@ -5,5 +5,4 @@ import java.util.UUID;
 public record WorkspaceRequestDTO(
         String title,
         UUID studentId
-) {
-}
+) {}
